@@ -1,0 +1,38 @@
+
+*{
+    /* margin: 0; */
+    /* margin-top: 10px; */
+    /* background-color: black; */
+    padding: 0;
+}
+
+
+#anim{
+  transition: .5s ease-out;
+}
+
+#anim:hover{
+  transform: scale(1.07);
+
+}
+
+.img-btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+/* Media query for smaller screens */
+
+
+
+
+
+
+
+
+/* @media (max-width: 700px) {
+  .text {
+    font-size: 25px;
+  }
+} */

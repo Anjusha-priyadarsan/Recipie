@@ -1,0 +1,44 @@
+<div class="container mt-7 shadow">
+    <div class="row">
+
+
+
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-3 text-warning">{{singleRecp.name}}</h1>
+
+
+
+        </div>
+
+        <div class="row p-5 ">
+            <div class="col-lg-4">                    <img class=" img-fluid " [src]="singleRecp.image" alt="" width="400px">
+            </div>
+
+            <div class="col-lg-4 mt-5  ">
+                <div>
+                    <h2>Ingredients:</h2>
+                    <ul>
+                        <ng-container>
+                            <li *ngFor="let ingredient of singleRecp.ingredients">{{ ingredient }}</li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5 ">
+                <div>
+                    <h2>Directions</h2>
+                    <ul>
+                        <ng-container *ngIf="singleRecp.instructions">
+                            <li *ngFor="let step of singleRecp.instructions">{{ step }}</li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
